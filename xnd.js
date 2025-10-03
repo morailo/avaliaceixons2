@@ -15,7 +15,7 @@ const  btnSair = document.querySelector("#desconectar");
 const exibirnome = document.querySelector("#exibirUsuario");
 
 if(window.location.pathname.endsWith("xnd.html")&& usuariosLogados){
-  window.location.href = "pagina2";
+  window.location.href = "pagina2.html";
 }
 
 if(window.location.pathname.endsWith("pagina2.html")&& !usuariosLogados){
@@ -88,4 +88,5 @@ btnCadastro.addEventListener("click" , function(){
 )
 
 }
+
 
