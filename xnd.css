@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    margin-left: auto;
+    background-image: url(paisagem-8bit-pixel-art-verao-paisagem-natural-paisagem-de-montanha-fundo-de-videogame-de-arcade_70347-7128.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+@font-face {
+  font-family: "MinhaFonte";
+  src: url('PressStart2P-vaV7.ttf') format('truetype');
+}
+
+#a {
+
+    margin: 25px;
+    padding: 50px;
+    text-align: center;
+    font-family: garamond;
+    text-shadow: 2px 2px 5px black;
+}
+#pagina2 {
+
+    margin: 25px;
+    padding: 50px;
+    text-align: center;
+    font-family: garamond;
+    text-shadow: 2px 2px 5px black;
+}
+
+#titulos {
+    font-family: 'MinhaFonte', sans-serif;
+    text-align: center;
+    color: yellow;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+#cadastro , #login {
+    height: 40px; 
+    width: 250px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+#jogar , #desconectar
+    {
+    height: 40px; 
+    width: 300px;
+    font-size: 18px;
+    border-radius: 25px;
+    }
+p {
+  color: white;
+}
+
+
+
