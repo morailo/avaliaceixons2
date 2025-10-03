@@ -22,6 +22,17 @@ if(window.location.pathname.endsWith("pagina2.html")&& !usuariosLogados){
   window.location.href = "xnd.html";
 }
 
+if(window.location.pathname.endsWith("pagina2.html")){
+btnSair.addEventListener("click" , function(){
+  localStorage.removeItem("usuarioLogados");
+  usuariosLogados = null;
+  window.location.href = "xnd.html"
+
+}
+)
+}
+
+
 if(window.location.pathname.endsWith("xnd.html")){
 
 btnCadastro.addEventListener("click" , function(){
@@ -77,12 +88,4 @@ btnCadastro.addEventListener("click" , function(){
 )
 
 }
-if(window.location.pathname.endsWith("pagina2.html")){
-btnSair.addEventListener("click" , function(){
-  localStorage.removeItem("usuarioLogados");
-  usuariosLogados = null;
-  window.location.href = "xnd.html"
 
-}
-)
-}
