@@ -52,6 +52,19 @@ p {
   color: white;
 }
 
+input {
+    text-align: center;
+    border-radius: 25px;
+}
 
+#saudaçao {
+text-align: center;
+font-family: 'MinhaFonte', sans-serif;
+ color: antiquewhite;
+}
 
-
+button {
+    color: [black];
+    font-family: 'MinhaFonte', sans-serif;
+    background-color: white;
+}
