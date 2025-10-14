@@ -74,8 +74,8 @@ btnCadastro.addEventListener("click" , function(){
     })
     
     if (existe) {
-      Logados = {nome: existe.nome , email:  existe.email};
-      localStorage.setItem("usuarioLogados", JSON.stringify(Logados));
+      usuariosLogados = {nome: existe.nome , email:  existe.email};
+      localStorage.setItem("usuarioLogados", JSON.stringify(usuariosLogados));
       alert("Login realizado com sucesso!")
       window.location.href = "pagina2.html"
     }
@@ -88,5 +88,11 @@ btnCadastro.addEventListener("click" , function(){
 )
 
 }
+if (window.location.pathname.endsWith("pagina2.html")) {
+  const usuariosLogados = JSON.parse(localStorage.getItem("usuarioLogados"));
+  const saudacao = document.querySelector("#saudaçao");
 
-
+  if (usuariosLogados && saudacao) {
+    saudacao.textContent = `Olá, ${usuariosLogados.nome}!` ;
+  }
+}
