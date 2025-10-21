@@ -13,7 +13,12 @@ body {
 }
 
 #a {
-
+    background-color: rgba(255, 255, 255, 0.662);
+    width: 35%;
+    transform: translate(65%);
+    background-position: center;
+    background-size: cover, 50px;
+    border-radius: 25px;
     margin: 25px;
     padding: 50px;
     text-align: center;
@@ -53,6 +58,7 @@ body {
     border-radius: 25px;
     }
 p {
+  font-family: "MinhaFonte"; 
   color: white;
 }
 
@@ -71,4 +77,8 @@ button {
     color: [black];
     font-family: 'MinhaFonte', sans-serif;
     background-color: white;
+}
+#subtitulos {
+  color: rgb(255, 255, 149);
+  font-family: 'MinhaFonte', sans-serif;
 }
