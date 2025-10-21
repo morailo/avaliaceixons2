@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Videogames</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffcc;
+    }
+    .quiz-container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #1e1e2f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    #submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz de Videogames</h1>
+  <div class="quiz-container" id="quiz">
+    <!-- Perguntas serão inseridas aqui via JavaScript -->
+  </div>
+  <button id="submit-btn">Ver Resultado</button>
+  <div id="result"></div>
+
+  <script>
+    const quizData = [
+      {
+        question: "Qual empresa criou o console PlayStation?",
+        options: ["Microsoft", "Nintendo", "Sony", "Sega"],
+        answer: 2
+      },
+      {
+        question: "Qual jogo popular tem personagens como Mario, Luigi e Bowser?",
+        options: ["Sonic", "Donkey Kong", "Super Mario Bros", "Zelda"],
+        answer: 2
+      },
+      {
+        question: "Em que ano foi lançado o primeiro console Xbox?",
+        options: ["1998", "2001", "2005", "2010"],
+        answer: 1
+      },
+      {
+        question: "Qual jogo é conhecido por sua mecânica de construção com blocos?",
+        options: ["Fortnite", "Minecraft", "Roblox", "Terraria"],
+        answer: 1
+      },
+      {
+        question: "Qual franquia tem como protagonista o guerreiro Kratos?",
+        options: ["God of War", "Assassin's Creed", "Halo", "Gears of War"],
+        answer: 0
+      },
+      {
+        question: "Qual jogo de corrida é famoso por seus itens como cascos e bananas?",
+        options: ["Gran Turismo", "Forza Horizon", "Mario Kart", "Need for Speed"],
+        answer: 2
+      },
+      {
+        question: "Qual desses jogos tem o animal Squirtle?",
+        options: ["Digimon", "Pokémon", "Monster Hunter", "Yu-Gi-Oh!"],
+        answer: 1
+      },
+      {
+        question: "Qual jogo é ambientado em Hyrule e tem Link como protagonista?",
+        options: ["Final Fantasy", "Zelda", "Skyrim", "Dragon Quest"],
+        answer: 1
+      },
+      {
+        question: "Qual jogo de tiro em primeira pessoa é famoso por seus zumbis e multiplayer?",
+        options: ["Call of Duty", "Battlefield", "Doom", "Counter-Strike"],
+        answer: 0
+      },
+      {
+        question: "Qual jogo indie é conhecido por sua dificuldade e estilo retrô?",
+        options: ["Hollow Knight", "Cuphead", "Stardew Valley", "Undertale"],
+        answer: 1
+      }
+    ];
+
+    const quizContainer = document.getElementById("quiz");
+
+    quizData.forEach((q, index) => {
+      const questionDiv = document.createElement("div");
+      questionDiv.classList.add("question");
+
+      const questionTitle = document.createElement("h3");
+      questionTitle.textContent = `${index + 1}. ${q.question}`;
+      questionDiv.appendChild(questionTitle);
+
+      q.options.forEach((option, i) => {
+        const label = document.createElement("label");
+        label.innerHTML = `<input type="radio" name="q${index}" value="${i}"> ${option}`;
+        questionDiv.appendChild(label);
+      });
+
+      quizContainer.appendChild(questionDiv);
+    });
+
+    document.getElementById("submit-btn").addEventListener("click", () => {
+      let score = 0;
+      quizData.forEach((q, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && parseInt(selected.value) === q.answer) {
+          score++;
+        }
+      });
+      document.getElementById("result").textContent = `Você acertou ${score} de ${quizData.length} perguntas!`;
+    });
+  </script>
+</body>
+</html>
