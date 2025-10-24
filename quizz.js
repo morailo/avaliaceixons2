@@ -9,3 +9,7 @@ const perguntas = [{pergunta:"numero 0", alternativas:[1,2,3,4], resposta: 2},
                     {pergunta:"numero 1", alternativas:[1,2,3,4], resposta: 2},
                     {pergunta:"numero 2", alternativas:[1,2,3,4], resposta: 2}, ]
   let perguntaAtual = 0
+function carregarPergunta(){
+  enunciado.textContent = perguntas[perguntasAtual].pergunta
+}
+carregarPergunta()
