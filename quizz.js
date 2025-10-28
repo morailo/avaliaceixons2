@@ -1,3 +1,4 @@
+
 const enunciado = document.querySelector("#enunciado")
 const alternativa1 = document.querySelector("#alternativa1")
 const alternativa2 = document.querySelector("#alternativa2")
@@ -5,14 +6,13 @@ const alternativa3 = document.querySelector("#alternativa3")
 const alternativa4 = document.querySelector("#alternativa4")
 const btnHome = document.querySelector("#voltarhome")
 
-const perguntas = [{pergunta:"numero 0", alternativas:[1,2,3,4], resposta: 2},
-                    {pergunta:"numero 1", alternativas:[1,2,3,4], resposta: 2},
-                    {pergunta:"numero 2", alternativas:[1,2,3,4], resposta: 2}, ]
-  let perguntaAtual = 0
-function carregarPergunta(){
-  enunciado.textContent = perguntas[perguntasAtual].pergunta}
+const perguntas = [{pergunta:"Qual foi o primeiro console de videogame lançado comercialmente na história?", alternativas:[0,1,2,3], resposta: 2},
+                    {pergunta:"Em qual jogo apareceu pela primeira vez o personagem Mario (antes de ser protagonista)?", alternativas:[0,1,2,3], resposta: 2},
+                    {pergunta:"O que significa a sigla RPG?", alternativas:[0,1,2,3], resposta: 2},
+                    {pergunta:"Em qual jogo você constrói com blocos e explora mundos?", alternativas:[0,1,2,3], resposta: 2}
+                  {pergunta:"Em The Legend of Zelda: Breath of the Wild, o que são os Shrines?", alternativas:[0,1,2,3], resposta: 2}]                    
 
-let pergunta atual = 0
+let perguntaAtual = 0
 
 btnHome.addEventListener("click", function(){
      window.location.href = "home.html";
@@ -27,10 +27,10 @@ function carregarPergunta(){
 
 }
 
-    alternativa1. addEventListener ("click", function(){verificarResposta(0)})
-    alternativa2. addEventListener ("click", function(){verificarResposta(1)})
-    alternativa3. addEventListener ("click", function(){verificarResposta(2)})
-    alternativa4. addEventListener ("click", function(){verificarResposta(3)})
+    alternativa1.addEventListener ("click", function(){verificarResposta(0)})
+    alternativa2.addEventListener ("click", function(){verificarResposta(1)})
+    alternativa3.addEventListener ("click", function(){verificarResposta(2)})
+    alternativa4.addEventListener ("click", function(){verificarResposta(3)})
 
    function verificarResposta(alternativaSelecionada) {
        if(alternativaSelecionada == perguntas[perguntaAtual]. resposta){
@@ -52,5 +52,6 @@ function carregarPergunta(){
 }
      
 carregarPergunta()
+
 
 
