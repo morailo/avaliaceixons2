@@ -96,3 +96,4 @@ if (window.location.pathname.endsWith("pagina2.html")) {
     saudacao.textContent = `Olá, ${usuariosLogados.nome}!` ;
   }
 }
+

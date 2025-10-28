@@ -9,11 +9,11 @@ body {
 }
 @font-face {
   font-family: "MinhaFonte";
-  src: url('PressStart2P-vaV7.ttf') format('truetype');
+  src: url('PressStart2P-Regular.ttf') format('truetype');
 }
 
 #a {
-    background-color: rgba(255, 255, 255, 0.662);
+    background-color: rgba(255, 255, 255, 0.7);
     width: 35%;
     transform: translate(65%);
     background-position: center;
@@ -23,10 +23,12 @@ body {
     padding: 50px;
     text-align: center;
     font-family: garamond;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 3px black;
 }
 #pagina2 {
-    background-color: rgba(255, 255, 255, 0.662);
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 40%;
+    transform: translate(50%);
     background-size: 10px;
     background-position: center;
     background-size: cover;
@@ -35,14 +37,18 @@ body {
     padding: 50px;
     text-align: center;
     font-family: garamond;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 #titulos {
     font-family: 'MinhaFonte', sans-serif;
     text-align: center;
     color: yellow;
-    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    text-shadow: black 
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
 }
 #cadastro , #login {
     height: 40px; 
@@ -58,10 +64,13 @@ body {
     border-radius: 25px;
     }
 p {
-  font-family: "MinhaFonte"; 
+  font-family: 'MinhaFonte', sans-serif;
   color: white;
 }
-
+#j {
+    font-family: 'MinhaFonte', sans-serif;
+    color: rgb(199, 155, 98);
+}
 input {
     text-align: center;
     border-radius: 25px;
@@ -74,11 +83,57 @@ font-family: 'MinhaFonte', sans-serif;
 }
 
 button {
-    color: [black];
+    color: black;
     font-family: 'MinhaFonte', sans-serif;
-    background-color: white;
+    background-color: rgba(255, 255, 255,);
+    text-shadow: solid, black 
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+}
+.button {
+    color: rgb(82, 221, 17);
+    font-family: 'MinhaFonte', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: black 
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000; 
+    text-decoration: none;
+    cursor: pointer;
+}
+button:hover {
+   background-color: rgba(219, 219, 219, 0.882);
+   text-shadow: black  
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000; 
+}
+.button:hover {
+   color: rgb(1, 185, 25);
+   text-decoration: none;
+   text-shadow: black
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
+}
+.button:before {
+  content: '→'; 
+  position: center;
+  left: -10px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+.button:hover::before {
+  left: -15px;
+  opacity: 1;
 }
 #subtitulos {
   color: rgb(255, 255, 149);
   font-family: 'MinhaFonte', sans-serif;
 }
+
