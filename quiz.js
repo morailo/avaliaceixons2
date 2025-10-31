@@ -2,8 +2,8 @@ console.log("Script carregado!");
 
 
 const perguntas = [
-  { pergunta: "Qual franquia é mais superestimada?", opcoes: ["Call of Duty", "FIFA", "Fortnite"], correta: "Fortnite" },
-  { pergunta: "Qual jogo teve o lançamento mais decepcionante?", opcoes: ["Cyberpunk 2077", "No Man's Sky", "Battlefield 2042"], correta: "Cyberpunk 2077" },
+  { pergunta: "Quem é o irmão do Mario?", opcoes: ["Luid", "Princesa Peach", "Rei dos Koopas"], correta: "Luid" },
+  { pergunta: "Qual é o poder do Sub-zero?", opcoes: ["Criomancia criar e manipular o gelo de diversas formas", "No Man's Sky", "Battlefield 2042"], correta: "Criomancia criar e manipular o gelo de diversas formas" },
   { pergunta: "Qual gênero está saturado no mercado?", opcoes: ["Battle Royale", "FPS", "MMORPG"], correta: "Battle Royale" },
   { pergunta: "Qual empresa mais decepcionou os fãs nos últimos anos?", opcoes: ["EA", "Blizzard", "Ubisoft"], correta: "Blizzard" },
   { pergunta: "Qual jogo não merecia o prêmio de Jogo do Ano?", opcoes: ["The Last of Us Part II", "It Takes Two", "Overwatch"], correta: "The Last of Us Part II" },

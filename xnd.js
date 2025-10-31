@@ -13,6 +13,8 @@ const btnLogin = document.querySelector("#login");
 
 const  btnSair = document.querySelector("#desconectar");
 const exibirnome = document.querySelector("#exibirUsuario");
+const btnjogar = document.querySelector('#jogar')
+const bntHome = document.querySelector("#home")
 
 if(window.location.pathname.endsWith("xnd.html")&& usuariosLogados){
   window.location.href = "pagina2.html";
@@ -22,6 +24,16 @@ if(window.location.pathname.endsWith("pagina2.html")&& !usuariosLogados){
   window.location.href = "xnd.html";
 }
 
+if(window.location.pathname.endsWith("raiz.html")){
+  bntHome.addEventListener("click", function(){
+    window.location.href ="pagina2.html"
+  })
+}
+if(window.location.pathname.endsWith("pagina2.html")){
+  btnjogar.addEventListener("click", function(){
+    window.location.href ="raiz.html"
+  })
+}
 
 if(window.location.pathname.endsWith("pagina2.html")){
 btnSair.addEventListener("click" , function(){
@@ -96,4 +108,5 @@ if (window.location.pathname.endsWith("pagina2.html")) {
     saudacao.textContent = `Olá, ${usuariosLogados.nome}!` ;
   }
 }
+
 
