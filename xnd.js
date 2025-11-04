@@ -56,7 +56,7 @@ btnCadastro.addEventListener("click" , function(){
     } 
 
     else {
-     if (email.includes ("@" + ".")) {
+     if (email.includes ("@")) {
 
      const usuario = {nome: nome , email:  email , senha: senha} ;
      cadastro.push(usuario);
