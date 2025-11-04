@@ -65,7 +65,8 @@ btnCadastro.addEventListener("click" , function(){
     const hash = CryptoJS.SHA256(texto).toString();
    cadastro.push(hash);
 
-      
+      console.log(hash);
+       console.log(texto);
      localStorage.setItem("usuarios" , JSON.stringify(hash));
        
      alert ("Cadastrado com sucesso!") 
