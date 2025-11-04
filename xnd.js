@@ -66,7 +66,7 @@ btnCadastro.addEventListener("click" , function(){
    cadastro.push(hash);
 
       
-     localStorage.setItem("usuarios" , JSON.stringify(cadastro));
+     localStorage.setItem("usuarios" , JSON.stringify(hash));
        
      alert ("Cadastrado com sucesso!") 
      console.log(cadastro);
