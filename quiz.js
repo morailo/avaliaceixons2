@@ -3,20 +3,20 @@ console.log("Script carregado!");
 
 const perguntas = [
   { pergunta: "Quem é o irmão do Mario?", opcoes: ["Luid", "Princesa Peach", "Rei dos Koopas"], correta: "Luid" },
-  { pergunta: "Qual é o poder do Sub-zero?", opcoes: ["Criomancia criar e manipular o gelo de diversas formas", "No Man's Sky", "Battlefield 2042"], correta: "Criomancia criar e manipular o gelo de diversas formas" },
-  { pergunta: "Qual gênero está saturado no mercado?", opcoes: ["Battle Royale", "FPS", "MMORPG"], correta: "Battle Royale" },
-  { pergunta: "Qual empresa mais decepcionou os fãs nos últimos anos?", opcoes: ["EA", "Blizzard", "Ubisoft"], correta: "Blizzard" },
-  { pergunta: "Qual jogo não merecia o prêmio de Jogo do Ano?", opcoes: ["The Last of Us Part II", "It Takes Two", "Overwatch"], correta: "The Last of Us Part II" },
-  { pergunta: "Qual console tem os exclusivos mais fracos?", opcoes: ["Xbox", "PlayStation", "Nintendo"], correta: "Xbox" },
-  { pergunta: "Qual prática é mais prejudicial nos jogos?", opcoes: ["Microtransações", "Loot boxes", "Pay-to-win"], correta: "Pay-to-win" },
-  { pergunta: "Qual jogo é injustamente odiado?", opcoes: ["Death Stranding", "Metal Gear Survive", "Diablo Immortal"], correta: "Death Stranding" },
-  { pergunta: "Qual franquia deveria acabar?", opcoes: ["Assassin's Creed", "Just Dance", "Pokémon"], correta: "Just Dance" },
-  { pergunta: "Qual jogo é mais viciante de forma negativa?", opcoes: ["League of Legends", "Genshin Impact", "Clash of Clans"], correta: "League of Legends" },
-  { pergunta: "Qual plataforma tem a comunidade mais tóxica?", opcoes: ["PC", "Console", "Mobile"], correta: "PC" },
-  { pergunta: "Qual jogo é mais injusto em matchmaking?", opcoes: ["Valorant", "CS:GO", "Overwatch"], correta: "CS:GO" },
-  { pergunta: "Qual jogo tem a pior economia interna?", opcoes: ["GTA Online", "Diablo IV", "FIFA Ultimate Team"], correta: "FIFA Ultimate Team" },
-  { pergunta: "Qual jogo é mais inflado por nostalgia?", opcoes: ["Pokémon Red", "Ocarina of Time", "Final Fantasy VII"], correta: "Ocarina of Time" },
-  { pergunta: "Qual jogo indie é superestimado?", opcoes: ["Undertale", "Hollow Knight", "Stardew Valley"], correta: "Undertale" }
+  { pergunta: "Qual é o poder do Sub-zero?", opcoes: ["Fogo", "Ácido", "Gelo"], correta: "Gelo" },
+  { pergunta: "Qual o objetivo do pac-man em seu jogo?", opcoes: ["Comer todas as bolinhas", "Sair do labirinto", "Derrotar os chefes"], correta: "Comer todas as bolinhas" },
+  { pergunta: "Qual é o nome do filho de Kratos?", opcoes: ["Loki", "Atreus", "Thor"], correta: "Atreus" },
+  { pergunta: "Qual jogo é conhecido por ser feito por blocos?", opcoes: ["Minecraft", "Roblox", "Cs go"], correta: "Minecraft" },
+  { pergunta: "Qual o nome das esmeraldas de sonic?", opcoes: ["Esmeraldas Misticas", "Esmeraldas do Caos", "Esmeraldas Sagradas"], correta: "Esmeraldas do Caos" },
+  { pergunta: "Qual é a empresa dona do Minecraft?", opcoes: ["Xbox", "King", "Mojang"], correta: "Mojang" },
+  { pergunta: "Qual jogo que é conhecido por usar 'cartas'?", opcoes: ["Free Fire", "Clash royale", "Hearthstone"], correta: "Clash royale" },
+  { pergunta: "Qual desses jogos não é Brasileiro?", opcoes: ["Enigma of Fear", "Deathbound", "Into the pit"], correta: "Into the pit" },
+  { pergunta: "Qual jogo é conhecido por sua dificuldade extrema e a frase 'You Died'??", opcoes: ["Dark Souls", "Assassin's Creed", "Bloodborne"], correta: "Dark Souls" },
+  { pergunta: "Qual jogo que é conhecido por 'rodar em tudo'?", opcoes: ["GTA", "Free fire", "Doom"], correta: "Doom" },
+  { pergunta: "Qual jogo é conhecido por matar deuses?", opcoes: ["God of War", "Resident Evil", "Tomb Raider"], correta: "God of War" },
+  { pergunta: "Qual jogo se passa em uma cidade chamada Night City", opcoes: ["GTA Online", "Diablo IV", "Cyberpunk 2077"], correta: "Cyberpunk 2077" },
+  { pergunta: "Qual o nome do primeiro chefe em Shadow Fight 2?", opcoes: ["Eremita", "Vespa", "Lince"], correta: "Lince" },
+  { pergunta: "Qual jogo apresenta uma flor falante chamada Flowey com intenções sombrias?", opcoes: ["Undertale", "Plants vs Zombies", "Stardew Valley"], correta: "Undertale" }
 ];
 
 let acertos = 0;
