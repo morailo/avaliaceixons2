@@ -60,15 +60,6 @@ btnCadastro.addEventListener("click" , function(){
 
      const usuario = {nome: nome , email:  email , senha: senha} ;
     
-              // Gera o hash do JSON atualizado
-    const texto = JSON.stringify(usuario);
-    const hash = CryptoJS.SHA256(texto).toString();
-   cadastro.push(hash);
-
-      console.log(hash);
-       console.log(texto);
-     localStorage.setItem("usuarios" , JSON.stringify(hash));
-       
      alert ("Cadastrado com sucesso!") 
      console.log(cadastro);
       tagnome.value = "" 
