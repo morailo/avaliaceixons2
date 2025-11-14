@@ -59,7 +59,8 @@ btnCadastro.addEventListener("click" , function(){
      if (email.includes ("@")) {
 
      const usuario = {nome: nome , email:  email , senha: senha} ;
-    
+         cadastro.push(usuario);
+     localStorage.setItem("usuarios", JSON.stringify(cadastro));
      alert ("Cadastrado com sucesso!") 
      console.log(cadastro);
       tagnome.value = "" 
