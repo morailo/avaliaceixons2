@@ -4,7 +4,9 @@ const tagsenha = document.querySelector("#senha");
 const btnCadastro = document.querySelector("#cadastro");
 
 let cadastro = JSON.parse(localStorage.getItem("usuarios")) || [];
-
+if (!Array.isArray(cadastro)) {
+  cadastro = [];
+}
 let usuariosLogados = JSON.parse(localStorage.getItem("usuarioLogados")) || null;
 
 const tagloginemail = document.querySelector("#emaillogin");
